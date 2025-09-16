@@ -68,7 +68,7 @@ body {
 
 .weather-center img {
   width: 200px;
-  height: 200px;
+  height: 180px;
 }
 
 .weather-center h2 {
@@ -155,3 +155,4 @@ body {
   justify-content: center; /* center vertically */
   text-align: center;
 }
+
