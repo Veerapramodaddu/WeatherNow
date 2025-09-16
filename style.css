@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('https://m-cdn.phonearena.com/images/article/147370-wide-two_1200/Google-Weather-app-for-Android-is-getting-a-Material-You-redesign.webp?1683517597');
+  background-size: cover;         
+  background-repeat: no-repeat;  
+  background-position: center;    
+  height: 100vh;                  
+  margin: 0;
+}
+
+
+
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 50, 0.3);
+  z-index: 0;
+}
+
+/* Search Bar */
+.search-bar {
+  position: relative;
+  margin: 40px auto;
+  text-align: center;
+  z-index: 1;
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 15px 20px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.search-bar button {
+  display: none; /* optional: only use enter key */
+}
+
+/* Main Weather Info */
+.weather-main {
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+.weather-main h1 {
+  font-size: 2.5rem;
+}
+
+.weather-main p {
+  font-size: 1rem;
+  margin: 5px 0 15px;
+}
+
+.weather-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-center img {
+  width: 200px;
+  height: 200px;
+}
+
+.weather-center h2 {
+  font-size: 4rem;
+  margin-top: -10px;
+}
+
+#weatherDesc {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Extra Info Card */
+.extra-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.extra-info div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.extra-info strong {
+  font-size: 1.3rem;
+}
+
+/* Forecast Section */
+#forecastContainer {
+  display: flex;
+  justify-content: center;  /* horizontally center */
+  gap: 15px;
+  margin-top: 40px;
+  flex-wrap: nowrap;
+  overflow-x: auto;  /* optional, scroll if too many cards */
+  padding-bottom: 10px;
+}
+
+
+.forecast {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 20px 30px;
+  justify-content: center;
+}
+
+.forecast-card {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  min-width: 80px;
+  justify-content: center;
+}
+
+.forecast-card img {
+  width: 80px;
+  height: 80px;
+  margin: 5px 0;
+  justify-content: center;
+}
+
+.forecast-card p {
+  font-size: 0.9rem;
+  justify-content: center;
+}
+
+.main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;    /* center horizontally */
+  justify-content: center; /* center vertically */
+  text-align: center;
+}

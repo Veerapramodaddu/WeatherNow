@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Now</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background overlay -->
+  <div class="overlay"></div>
+
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" id="cityInput" placeholder="Search city...">
+    <button id="searchBtn">Search</button>
+  </div>
+
+  <!-- Main Weather Section -->
+  <div class="weather-main">
+    <h1 id="cityName">City, Country</h1>
+    <p id="dateText">Wednesday, 1 January</p>
+
+    <div class="weather-center">
+      <img id="weatherIcon" src="" alt="" style="display:none">
+      <h2 id="temperature">--°</h2>
+    </div>
+
+    <p id="weatherDesc">Weather description</p>
+
+    <!-- Extra Info -->
+    <div class="extra-info">
+      <div><strong id="highTemp">--°</strong><span>High</span></div>
+      <div><strong id="lowTemp">--°</strong><span>Low</span></div>
+      <div><strong id="windSpeed">--</strong><span>Wind</span></div>
+      <div><strong id="humidity">--%</strong><span>Humidity</span></div>
+      <div><strong id="sunrise">--:--</strong><span>Sunrise</span></div>
+      <div><strong id="sunset">--:--</strong><span>Sunset</span></div>
+    </div>
+  </div>
+
+  <!-- Forecast Section -->
+  <div class="forecast" id="forecast">
+    <!-- Hourly forecast cards go here -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
